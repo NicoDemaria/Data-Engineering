@@ -1,0 +1,97 @@
+whoami = Que usuario esta usando el sistema
+Desktop-PC
+
+pwd, present  working directory = Muestra la ruta del directorio actual
+/c/Users/Desktop-PC/Desktop/Data-Engineering
+
+ls = Muestra el contenido del directorio actual . -a = Mue
+ Courses/  'Data Engineer (1).xlsx'   job_research_project/   README.md
+
+ ls -l
+ drwxr-xr-x 1 Desktop-PC 197609     0 Feb 14 17:28  Courses/
+-rw-r--r-- 1 Desktop-PC 197609 72176 Jan 31 16:48 'Data Engineer (1).xlsx'
+drwxr-xr-x 1 Desktop-PC 197609     0 Feb  9 15:02  job_research_project/
+-rw-r--r-- 1 Desktop-PC 197609    35 Jan 30 19:06  README.md
+
+
+cd changue directory = Cambia el directorio actual
+.. = nos lleva un directorio atras
+../.. = nos lleva dos directorios atras
+/ = nos lleva al directorio raiz
+
+xdg-open = Abre un archivo o directorio con la aplicacion por defecto (distro linux)
+open . = Abre el directorio actual en el explorador de archivos
+
+touch  = crea un archivo en el directorio actual
+
+mkdir = crea una carpeta en el directorio actual
+
+mv = nos ayuda a renombra un archivo o moverlo a otro directorio
+$ mv MoveExample.txt ExampleFolder/
+cp = copia un archivo o directorio
+rm = remueve un archivo o directorio
+
+file * = nos muestra el tipo de archivo que es
+file *.txt
+
+a.txt:            ASCII text
+b.txt:            ASCII text
+CopyTestFile.txt: ASCII text
+MoveExample.txt:  empty
+
+-R = nos permite hacer una operacion de manera recursiva
+
+$ ls -la -R
+.:
+total 11
+drwxr-xr-x 1 Desktop-PC 197609  0 Feb 16 17:01 ./
+drwxr-xr-x 1 Desktop-PC 197609  0 Feb 16 16:57 ../
+-rw-r--r-- 1 Desktop-PC 197609 20 Feb 16 17:01 a.txt
+-rw-r--r-- 1 Desktop-PC 197609 19 Feb 16 17:01 b.txt
+-rw-r--r-- 1 Desktop-PC 197609 19 Feb 16 17:02 CopyTestFile.txt
+-rw-r--r-- 1 Desktop-PC 197609  0 Feb 16 16:53 MoveExample.txt
+
+>  = redirecciona un comando a un archivo (crea un archivo si no existe), si el archivo existe lo sobreescribe
+echo "Hello World" > hello.txt
+>> = apend, lo que hace es agregar comandos al archivo que ya tenemos
+
+cat= podemos concatenar dos outputs
+cat txt1.txt txt2.txt
+podriamos usar este comando para crear un nuevo archivo:
+cat txt1.txt txt2.txt > txt3.txt
+
+pipe | = usa el output de un comando como input de otro
+
+ls FolderExample | tail -4 = te deja ver los ultimos datos de un archivo
+tail -4 = te deja ver los ultimos datos de un archivo
+
+find = busca archivos en un directorio
+finde folderEjemplo -name ApiCall.py = busca el archivo ApiCall.py en el directorio folderEjemplo
+find -type f = busca todos los archivos en el directorio actual
+find -type d = busca todos los folders  en el directorio actual
+
+grep =  nos sirve para buscar texto en un archivo
+
+grep "Hello" hello.txt
+
+sudo = ejecuta un comando como superusuario
+
+chow = cambia el propietario de un archivo o directorio
+chmod = cambia los permisos de un archivo o directorio
+chmod + x = da permisos de ejecucion
+
+
+myvar=123 = crea una variable
+echo "${myvar}" = con $ accedemos al valor de la variable
+123
+unset = quita el valor de la variable
+unset myvar
+
+command substitution = nos permite ejecutar un comando y guardar el output en una variable
+myvar=$(ls)
+
+read = nos permite leer un input del usuario
+-p = nos permite poner un mensaje
+read -p "Enter your name: " name
+read -s = nos permite leer un input del usuario sin que se muestre en la pantalla
+

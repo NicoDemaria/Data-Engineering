@@ -1,0 +1,28 @@
+TODO  DOCKER NOTES
+
+https://docs.docker.com/get-started/
+
+Docker empaqueta toda una aplicacion junto con sus dependencias, librerias  y congiguraciones en un contenedor, que luego el mismo podra ser ejecutado y corrido en diferentes...
+ambientes y funcionar de la misma manera que en el ambiente donde fue creado, reduciendo los problemas relacionados a versionado, compatibilidad y dependencias
+
+Docker concepts
+
+---Docker file: es un archivo de texto que contiene las instrucciones para construir una imagen de docker
+---Docker image: es un paquete que contiene una aplicacion y todas sus dependenciasque se puede ejecutar en cualquier ambiente
+-- Docker container: es una instancia de una imagen de docker que se puede ejecutar, iniciar, detener, mover y borrar
+
+
+Dockerfile
+
+#TODO Usa una imagen base
+FROM node:18-alpine
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /app
+#Copia el código fuente de tu aplicación al contenedor
+COPY . .
+# Instala las dependencias de tu aplicación
+RUN yarn install --production
+# Comando para iniciar la aplicación
+CMD ["node", "src/index.js"]
+# Expone el puerto en el que la aplicación se ejecutará
+EXPOSE 3000

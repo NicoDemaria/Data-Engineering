@@ -1,0 +1,43 @@
+NicoDemariaDBT
+
+ggayvqh-ow09964
+
+dbt_project.yml =  global configurations for the project
+
+TODO: models
+
+TODO: commands
+    pip install virtualenv = Instala virtualenv
+    virtualenv venv = Crea un entorno virtual
+    source venv/bin/activate = Activa el entorno virtual
+
+    pip install dbt-snowflake==1.7.1, = Esto nos intalara la version 1.7.1 de dbt-snowflake junto con dbt core y sus dependencias
+    dbt  init = Inicializa un proyecto de dbt
+    dbt debug = Verifica que el proyecto de dbt este bien configurado
+    dbt run = Ejecuta los modelos de dbt
+
+
+    
+
+
+-models: are the basic build block of our business logic
+-materialized as tables, views etc
+-they live in sql files inside the models folder
+-models can reference other models and use macros and templates
+
+TODO: CTE (Common Table Expression) 
+Exactamente, una CTE (Common Table Expression) te permite definir una tabla temporal dentro de una consulta SQL sin la necesidad de crear una tabla física en la base de datos. Es una forma de "obviar" el paso de crear una tabla temporal por separado y realizar la operación directamente en la consulta. Las CTE son útiles cuando necesitas realizar operaciones complejas o recursivas en tus consultas SQL, ya que te permiten dividir la lógica de la consulta en partes más manejables y legibles. Una vez que se ejecuta la consulta que contiene la CTE, los resultados se tratan como una tabla temporal y se pueden utilizar en la parte principal de la consulta o en consultas posteriores si es necesario.
+
+WITH TopProducts AS (
+    SELECT ProductId, SUM(Quantity) AS TotalQuantity
+    FROM Sales
+    GROUP BY ProductId
+    ORDER BY TotalQuantity DESC
+    LIMIT 5
+)
+SELECT *
+FROM TopProducts;
+
+TODO: data flow process
+
+    raw layer > staging layer > 
