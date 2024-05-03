@@ -1,0 +1,177 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>MultidimensionalProject1</ID>
+  <Name>MultidimensionalProject1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>DATAWAREHOUSE</ID>
+      <Name>DATAWAREHOUSE</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-7OV0E1D\MSSQLSERVERDEV;Integrated Security=SSPI;Initial Catalog=DATAWAREHOUSE</ConnectionString>
+      <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>DATAWAREHOUSE</ID>
+      <Name>DATAWAREHOUSE</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+          <Value></Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout>
+                  <dds>
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10884" scrolltop="-9909" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="31221" y="22966" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                      <font>
+                        <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                      </font>
+                      <mouseicon>
+                        <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                      </mouseicon>
+                    </diagram>
+                    <layoutmanager>
+                      <ddsxmlobj />
+                    </layoutmanager>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="datos_personales" left="6020" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3413" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000550d00004d0c0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_datos_personales" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                    <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="fact_data" left="20" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                      <control>
+                        <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+                      </control>
+                      <layoutobject>
+                        <ddsxmlobj>
+                          <property name="LogicalObject" value="dbo_fact_data" vartype="8" />
+                        </ddsxmlobj>
+                      </layoutobject>
+                      <shape groupshapeid="0" groupnode="0" />
+                    </ddscontrol>
+                  </dds>
+</DiagramLayout>
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>-10884</DiagramViewPortLeft>
+                <DiagramViewPortTop>-9909</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>DATAWAREHOUSE</DataSourceID>
+      <Schema>
+        <xs:schema id="DATAWAREHOUSE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="DATAWAREHOUSE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="2fac07ab-fd27-487b-8531-1148534d90da">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_datos_personales" msprop:design-time-name="3ddea349-dda5-46d1-8c03-63fe99fea09f" msprop:FriendlyName="datos_personales" msprop:TableType="View" msprop:DbSchemaName="dbo" msprop:DbTableName="datos_personales">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="b847025a-cbd2-4008-90aa-7eca2cda77a7" type="xs:int" minOccurs="0" />
+                      <xs:element name="Nombre" msprop:FriendlyName="Nombre" msprop:DbColumnName="Nombre" msprop:design-time-name="ffae9c6a-499c-4694-a95d-cd646c2b6382" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="NombreCompleto" msprop:FriendlyName="NombreCompleto" msprop:DbColumnName="NombreCompleto" msprop:design-time-name="196020d0-7b2a-4103-835b-263534a9604e" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="150" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="FechaNacimiento" msprop:FriendlyName="FechaNacimiento" msprop:DbColumnName="FechaNacimiento" msprop:design-time-name="3bc55d47-8140-49d9-8f6d-cc4b31304357" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="Nacionalidad" msprop:FriendlyName="Nacionalidad" msprop:DbColumnName="Nacionalidad" msprop:design-time-name="af4fe336-1823-4982-9801-e92137c52c3f" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="100" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_fact_data" msprop:design-time-name="983a5939-e3be-46a7-a6e5-c0737ae739cd" msprop:FriendlyName="fact_data" msprop:TableType="View" msprop:DbSchemaName="dbo" msprop:DbTableName="fact_data">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="2e7582b3-3842-4a1f-b08a-852187d8fc20" type="xs:int" minOccurs="0" />
+                      <xs:element name="AlturaCM" msprop:FriendlyName="AlturaCM" msprop:DbColumnName="AlturaCM" msprop:design-time-name="7cf8ec04-a955-4fe9-8b14-007045c172cd" type="xs:int" minOccurs="0" />
+                      <xs:element name="PesoKG" msprop:FriendlyName="PesoKG" msprop:DbColumnName="PesoKG" msprop:design-time-name="a545429d-03d1-40f9-ac1a-65d36f846013" type="xs:int" minOccurs="0" />
+                      <xs:element name="ValorEuropa" msprop:FriendlyName="ValorEuropa" msprop:DbColumnName="ValorEuropa" msprop:design-time-name="ff5564d9-46e1-41df-8cd7-25b6f7f3ffe6" type="xs:double" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <DATAWAREHOUSE xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+  <Roles>
+    <Role>
+      <ID>Role</ID>
+      <Name>Role</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+    </Role>
+  </Roles>
+  <DatabasePermissions>
+    <DatabasePermission>
+      <ID>DatabasePermission</ID>
+      <Name>DatabasePermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+    </DatabasePermission>
+  </DatabasePermissions>
+</Database>

@@ -1,0 +1,93 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="013f193d-5771-4e63-bc49-466bacaa7d32" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DATAWAREHOUSE</ID>
+  <Name>DATAWAREHOUSE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DATAWAREHOUSE</DataSourceID>
+  <Schema>
+    <xs:schema id="DATAWAREHOUSE" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DATAWAREHOUSE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="2fac07ab-fd27-487b-8531-1148534d90da">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_datos_personales" msprop:DbTableName="datos_personales" msprop:FriendlyName="datos_personales" msprop:TableType="View" msprop:DbSchemaName="dbo" msprop:design-time-name="3ddea349-dda5-46d1-8c03-63fe99fea09f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="b847025a-cbd2-4008-90aa-7eca2cda77a7" type="xs:int" minOccurs="0" />
+                  <xs:element name="Nombre" msprop:FriendlyName="Nombre" msprop:DbColumnName="Nombre" msprop:design-time-name="ffae9c6a-499c-4694-a95d-cd646c2b6382" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NombreCompleto" msprop:FriendlyName="NombreCompleto" msprop:DbColumnName="NombreCompleto" msprop:design-time-name="196020d0-7b2a-4103-835b-263534a9604e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FechaNacimiento" msprop:FriendlyName="FechaNacimiento" msprop:DbColumnName="FechaNacimiento" msprop:design-time-name="3bc55d47-8140-49d9-8f6d-cc4b31304357" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Nacionalidad" msprop:FriendlyName="Nacionalidad" msprop:DbColumnName="Nacionalidad" msprop:design-time-name="af4fe336-1823-4982-9801-e92137c52c3f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_fact_data" msprop:DbTableName="fact_data" msprop:FriendlyName="fact_data" msprop:TableType="View" msprop:DbSchemaName="dbo" msprop:design-time-name="983a5939-e3be-46a7-a6e5-c0737ae739cd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:FriendlyName="id" msprop:DbColumnName="id" msprop:design-time-name="2e7582b3-3842-4a1f-b08a-852187d8fc20" type="xs:int" minOccurs="0" />
+                  <xs:element name="AlturaCM" msprop:FriendlyName="AlturaCM" msprop:DbColumnName="AlturaCM" msprop:design-time-name="7cf8ec04-a955-4fe9-8b14-007045c172cd" type="xs:int" minOccurs="0" />
+                  <xs:element name="PesoKG" msprop:FriendlyName="PesoKG" msprop:DbColumnName="PesoKG" msprop:design-time-name="a545429d-03d1-40f9-ac1a-65d36f846013" type="xs:int" minOccurs="0" />
+                  <xs:element name="ValorEuropa" msprop:FriendlyName="ValorEuropa" msprop:DbColumnName="ValorEuropa" msprop:design-time-name="ff5564d9-46e1-41df-8cd7-25b6f7f3ffe6" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <DATAWAREHOUSE xmlns="" />
+  </Schema>
+</DataSourceView>
